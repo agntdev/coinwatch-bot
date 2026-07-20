@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Manage watchlist",
+    "steps": [
+      {
+        "expect": [
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "View and modify existing watchlist entries"
+            }
+          }
+        ],
+        "send": {
+          "callback": "manage_watchlist:view"
+        }
+      }
+    ]
+  }
+]
